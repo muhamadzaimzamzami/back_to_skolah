@@ -1,0 +1,25 @@
+<IfModule mod_rewrite.c>
+RewriteEngine on
+
+	RewriteRule ^home$ skolah.php [L]
+	RewriteRule ^news$ news.php [L]
+	RewriteRule ^category$ category.php [L]
+	RewriteRule ^tingkat$ tingkat.php [L]
+	RewriteRule ^mapel$ mataPelajaran.php [L]
+	RewriteRule ^belajar$ belajar.php [L]
+	RewriteRule ^kuis$ kuis.php [L]
+	RewriteRule ^kelas$ kelas.php [L]
+	RewriteRule ^instansi$ instansi.php [L]
+	RewriteRule ^slider$ mainSlider.php [L]
+	RewriteRule ^user$ usersList.php [L]
+	RewriteRule ^asal_sekolah$ asalSekolah.php [L]
+	RewriteRule ^provinsi$ propinsi.php [L]
+	RewriteRule ^kota$ kota.php [L]
+	RewriteRule ^kabupaten$ kabupaten.php [L]
+	RewriteRule ^desa$ desa.php [L]
+
+	
+#Alternate default index page
+DirectoryIndex skolah.php
+Options All -Indexes
+</IfModule>
